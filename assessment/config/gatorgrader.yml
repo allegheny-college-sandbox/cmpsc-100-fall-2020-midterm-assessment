@@ -1,0 +1,23 @@
+---
+name: cmpsc-100-midterm-assessment
+break: true
+indent: 4
+---
+
+CMPSC 100 - Fall 2020 - Midterm Assessment.ipynb:
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "while" --count 1
+    MatchFileFragment --fragment "for" --count 1
+    MatchFileFragment --fragment "if" --count 2
+    MatchFileFragment --fragment "catalog[item]" --count 2
+    MatchFileFragment --fragment "if total_weight > 100" --count 1 --exact
+    MatchFileFragment --fragment "elif total_weight > 50" --count 1 --exact
+    MatchFileFragment --fragment "conveyor.append" --count 1
+    MatchFileFragment --fragment "input(" --count 1 --exact
+    
+MatchCommandFragment --command "python3 CMPSC_100_-_Fall_2020_-_Midterm_Assessment.py < .inputs/.conveyor" --fragment "27 extra large widgets" --count 1 --exact
+MatchCommandFragment --command "python3 CMPSC_100_-_Fall_2020_-_Midterm_Assessment.py < .inputs/.conveyor" --fragment "30 small widgets" --count 1 --exact
+MatchCommandFragment --command "python3 CMPSC_100_-_Fall_2020_-_Midterm_Assessment.py < .inputs/.conveyor" --fragment "17 large widgets" --count 1 --exact
+MatchCommandFragment --command "python3 CMPSC_100_-_Fall_2020_-_Midterm_Assessment.py < .inputs/.conveyor" --fragment "26 medium widgets" --count 1 --exact
+MatchCommandFragment --command "python3 CMPSC_100_-_Fall_2020_-_Midterm_Assessment.py < .inputs/.conveyor" --fragment "$10" --count 1 --exact
+MatchCommandFragment --command "python3 CMPSC_100_-_Fall_2020_-_Midterm_Assessment.py < .inputs/.conveyor" --fragment "$142.0" --count 1 --exact

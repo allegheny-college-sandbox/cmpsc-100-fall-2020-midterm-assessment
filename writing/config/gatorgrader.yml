@@ -1,0 +1,12 @@
+---
+name: cmpsc-100-midterm-assessment
+break: true
+indent: 4
+---
+
+reflection.md:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountFileWords --count 300
+    CountFileParagraphs --count 5
+    CountMarkdownTags --tag "code_block" --count 2
